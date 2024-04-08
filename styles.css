@@ -1,0 +1,46 @@
+body {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin: -100px 0 0 -150px;
+    font-family: "Roboto", sans-serif;
+    background-image: url("./imgs/background.jpg");
+    background-position: center;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+div.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+button:first-child {
+    background-color: green;
+}
+
+button:first-child:hover {
+    box-shadow: 0 0 30px green;
+}
+
+button:nth-child(2) {
+    background-color: red;
+}
+
+button:nth-child(2):hover {
+    box-shadow: 0 0 30px red;
+}
